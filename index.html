@@ -3,64 +3,221 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FF Arena — Dicas e Ferramentas para Free Fire</title>
-<meta name="description" content="Dicas, configurações, ferramentas e guias para jogadores de Free Fire.">
+<meta name="theme-color" content="#ff6a00">
+
+<title>FF Arena — Brevent, SetEdit e Dicas FF</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;background:#0b0d12;color:#f5f5f5;line-height:1.6}
-header{background:linear-gradient(135deg,#151923,#ff7a00);padding:28px 7%;position:sticky;top:0;z-index:10}
-nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
-.logo{font-size:26px;font-weight:900}.logo span{color:#ffd21f}
-nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:700}
-.hero{padding:75px 7%;background:radial-gradient(circle at 80% 20%,#ff7a0030,transparent 35%),#0b0d12}
-.hero h1{font-size:clamp(38px,7vw,72px);line-height:1.05;max-width:800px}
-.hero h1 span{color:#ff9d19}.hero p{max-width:650px;margin:20px 0;color:#c9ccd4;font-size:18px}
-.btn{display:inline-block;background:#ff7a00;color:white;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:800}
-.ad{margin:25px auto;padding:18px;max-width:1000px;text-align:center;border:1px dashed #444;color:#888;border-radius:10px;font-size:13px}
-main{padding:25px 7% 60px}.section{margin:45px 0}h2{font-size:30px;margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.card{background:#141821;border:1px solid #252a35;border-radius:15px;padding:22px}
-.card h3{margin-bottom:8px;color:#ffd21f}.card p{color:#b9bec9}
-.tool{background:#141821;border-radius:15px;padding:25px;border:1px solid #252a35}
-label{display:block;margin:12px 0 6px;font-weight:700}
-input{width:100%;padding:12px;border-radius:8px;border:1px solid #343a48;background:#0b0d12;color:white}
-button{margin-top:15px;padding:12px 18px;border:0;border-radius:8px;background:#ff7a00;color:#fff;font-weight:800;cursor:pointer}
-#result{margin-top:18px;padding:15px;border-radius:8px;background:#0b0d12;color:#ffd21f}
-footer{padding:30px 7%;background:#08090d;color:#888;text-align:center}
-@media(max-width:700px){nav a{display:none}.hero{padding-top:50px}}
-</style>
-</head>
-<body>
-<header><nav><div class="logo">FF <span>ARENA</span></div><div>
-<a href="#dicas">Dicas</a><a href="#ferramentas">Ferramentas</a><a href="#guias">Guias</a>
-</div></nav></header>
-<section class="hero">
-<h1>Suba de nível no <span>Free Fire</span>.</h1>
-<p>Dicas, configurações, ferramentas e guias para ajudar você a jogar melhor — tudo em um só lugar.</p>
-<a class="btn" href="#ferramentas">Usar ferramentas</a>
-</section>
-<div class="ad">ESPAÇO PARA ANÚNCIO</div>
-<main>
-<section class="section" id="dicas"><h2>🔥 Dicas rápidas</h2><div class="grid">
-<article class="card"><h3>🎯 Treino de mira</h3><p>Pratique movimentos curtos e controle o ritmo dos disparos no campo de treinamento.</p></article>
-<article class="card"><h3>⚙️ Configurações</h3><p>Teste diferentes sensibilidades e mantenha a configuração que você consegue controlar melhor.</p></article>
-<article class="card"><h3>🧠 Estratégia</h3><p>Observe o mapa, escolha bons posicionamentos e evite decisões precipitadas.</p></article>
-<article class="card"><h3>🏆 Ranqueada</h3><p>Jogue pensando em sobrevivência, posicionamento e trabalho em equipe.</p></article>
-</div></section>
-<section class="section" id="ferramentas"><h2>🛠️ Calculadora de sensibilidade</h2><div class="tool">
-<p>Escolha uma sensibilidade base e veja uma sugestão inicial. Use como ponto de partida e ajuste ao seu estilo.</p>
-<label for="base">Sensibilidade base</label><input id="base" type="number" min="1" max="200" value="100">
-<button onclick="calc()">Calcular sugestão</button><div id="result">Sua sugestão aparecerá aqui.</div>
-</div></section>
-<div class="ad">ESPAÇO PARA ANÚNCIO</div>
-<section class="section" id="guias"><h2>📚 Guias</h2><div class="grid">
-<article class="card"><h3>Como melhorar a mira</h3><p>Crie uma rotina curta de treino e acompanhe o que funciona para você.</p></article>
-<article class="card"><h3>Como jogar melhor em squad</h3><p>Combine funções, comunicação e posicionamento com seus amigos.</p></article>
-<article class="card"><h3>Como escolher seu estilo</h3><p>Experimente diferentes estratégias e descubra qual combina com seu jeito de jogar.</p></article>
-</div></section>
-</main>
-<footer><p>FF Arena é um site de fã independente e não é afiliado à Garena ou ao Free Fire.</p><p>© 2026 FF Arena</p></footer>
-<script>
-function calc(){const b=Math.max(1,Math.min(200,Number(document.getElementById('base').value)||100));document.getElementById('result').innerHTML=`Sugestão inicial: Geral ${Math.round(b)} • Red Dot ${Math.round(b*.92)} • 2x ${Math.round(b*.82)} • 4x ${Math.round(b*.72)}`;}
-</script>
-</body></html>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#080808;
+  color:#fff;
+  line-height:1.6;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#101010;
+  border-bottom:1px solid #292929;
+  padding:14px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#ff7200;
+  font-size:23px;
+  font-weight:900;
+}
+
+nav{
+  display:flex;
+  gap:14px;
+  overflow-x:auto;
+}
+
+nav a{
+  color:#ddd;
+  text-decoration:none;
+  white-space:nowrap;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#ff7200;
+}
+
+.hero{
+  padding:75px 7%;
+  text-align:center;
+  background:
+  radial-gradient(circle at top,#4b2005 0%,#111 40%,#080808 75%);
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+.orange{
+  color:#ff7200;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#bbb;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  background:#ff7200;
+  color:#fff;
+  padding:12px 22px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+section{
+  padding:55px 0;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.title h2{
+  font-size:30px;
+}
+
+.title p{
+  color:#999;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:#111;
+  border:1px solid #282828;
+  border-radius:15px;
+  padding:22px;
+  box-shadow:0 8px 25px #0005;
+}
+
+.card h3{
+  color:#ff7200;
+  margin-bottom:10px;
+}
+
+.card p,.card li{
+  color:#bbb;
+  font-size:14px;
+}
+
+.card ul{
+  padding-left:20px;
+}
+
+.command{
+  margin-top:15px;
+  background:#050505;
+  border:1px solid #303030;
+  border-radius:10px;
+  padding:12px;
+}
+
+.command code{
+  color:#62ff91;
+  font-size:13px;
+  word-break:break-all;
+}
+
+.copy{
+  margin-top:10px;
+  border:0;
+  background:#ff7200;
+  color:white;
+  padding:8px 12px;
+  border-radius:7px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.tip{
+  border-left:4px solid #ff7200;
+  background:#151515;
+  padding:15px;
+  margin:12px 0;
+  border-radius:8px;
+  color:#ccc;
+}
+
+.warning{
+  border-left:4px solid #ff3b30;
+  background:#1a1010;
+  padding:17px;
+  border-radius:10px;
+  margin-top:20px;
+  color:#ddd;
+}
+
+.ad{
+  min-height:90px;
+  border:1px dashed #444;
+  background:#0d0d0d;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#666;
+  margin:25px 0;
+  border-radius:10px;
+  font-size:13px;
+}
+
+.faq{
+  margin-bottom:12px;
+}
+
+.faq summary{
+  cursor:pointer;
+  background:#131313;
+  padding:15px;
+  border-radius:9px;
+  color:#fff;
+  font-weight:bold;
+}
+
+.faq p{
+  padding:12px 15px;
+  color:#aaa;
+}
+
+footer{
+  text-align:center;
+  padding:35
